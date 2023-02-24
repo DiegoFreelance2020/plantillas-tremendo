@@ -30,6 +30,10 @@
     font-size: 76px;
 }
 
+.t-small3{
+    font-size: 110px;
+}
+
 .gallery{
     padding: 20px 1em;
     display: grid;
@@ -107,4 +111,34 @@
     margin-left: 1em;
     margin-bottom: 0px;
     text-align: right;
+}
+
+.plantilla-header3{
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.plantilla-header3__top{
+    padding: 2em 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.plantilla-header3__top img{
+    width: 252px;
+    margin-right: 18em;
+}
+
+.plantilla-header3__bottom{
+    padding: 2em 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: -22em;
+}
+
+.plantilla-header3__bottom img{
+    width: 252px;
 }
