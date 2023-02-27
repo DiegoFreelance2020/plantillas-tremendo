@@ -38,8 +38,13 @@
     padding: 20px 1em;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); */
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+}
+
+.gallery__item{
+    grid-column: span 4;
 }
 
 .gallery__item__img{
@@ -89,6 +94,7 @@
     align-items: center;
     justify-content: flex-end;
     box-sizing: border-box;
+    align-items: flex-start;
 }
 
 .plantilla-header2__top__right{
@@ -142,3 +148,19 @@
 .plantilla-header3__bottom img{
     width: 252px;
 }
+
+.grid-2-columns .gallery__item:first-child{
+    grid-column: span 7;
+}
+
+.proyectos-plantilla-1 .gallery, .proyectos-plantilla-3 .gallery{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+.proyectos-plantilla-1 .gallery .gallery__item,.proyectos-plantilla-3 .gallery .gallery__item{
+    grid-column: unset;
+}
+
+/* .gallery__item__img:first-child{
+    grid-column: min(1200px);
+} */
